@@ -1,0 +1,158 @@
+.login-header {
+  border-bottom: 1px solid #CACACA;
+}
+
+.login-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.login-title {
+  display: block;
+  font-weight: bold;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.login-title {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.login-form-user-title, .login-form-password-title {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.login-input, .password-input {
+  padding: 8px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-sign-in {
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  padding: 15px 0;
+}
+
+.login-form-user {
+  padding: 5px 0 5px 0;
+}
+
+.login-form-user-title {
+  padding-bottom: 5px;
+}
+
+.login-form-password {
+  padding: 10px 0 5px 0;
+}
+
+.login-form-password-title {
+  padding-bottom: 5px;
+}
+
+.login-form-password-not-remember {
+  font-size: 1.1em;
+  padding: 15px 0 25px 0;
+}
+
+.login-form-password-not-remember a {
+  color: #5E5E5E;
+}
+
+.login-form-submit {
+  display: flex;
+}
+
+.login-form-submit-remember-me {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.login-form-submit-remember-me input[type=checkbox] {
+  background-color: #00ff00;
+  display: none;
+}
+
+.remember-me-checkbox {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+}
+
+.login-form-submit-remember-me input[type=checkbox]:checked + .remember-me-label .remember-me-checkbox {
+  background-color: #00ff00;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Cpath d='M13.613 27.068l-7.94-7.28q-.285-.267-.442-.613t-.172-.7.11-.71.394-.638q.52-.583 1.3-.614T8.225 17l6.13 5.626 8.79-17q.363-.693 1.104-.93t1.433.118.93 1.103-.126 1.442L16.56 26.55q-.204.394-.558.654t-.78.34q-.063.015-.118.023t-.11.008-.102 0q-.74 0-1.276-.504z' fill='%23FFF'/%3E%3C/svg%3E");
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.remember-me-label {
+  display: flex;
+  font-size: 1.1em;
+}
+
+.remember-me-label-text {
+  padding: 0 5px 0 5px;
+}
+
+.login-form-submit-button {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.login-form-submit-button input[type=submit] {
+  padding: 15px 45px 15px 45px;
+  border-radius: 25px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: #00ff00;
+  color: #ffffff;
+}
+
+.login-sign-up-title {
+  font-size: 1.1em;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  font-weight: bold;
+}
+
+.login-sign-up-button {
+  display: flex;
+  justify-content: center;
+}
+
+.login-sign-up-button a {
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid #5E5E5E;
+  color: #5E5E5E;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.85em;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=login.component.css.map */
