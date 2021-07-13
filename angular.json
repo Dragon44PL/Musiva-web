@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dratify-web": {
+    "musiva-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dratify-web",
+            "outputPath": "dist/musiva-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dratify-web:build"
+            "browserTarget": "musiva-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "dratify-web:build:production"
+              "browserTarget": "musiva-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dratify-web:build"
+            "browserTarget": "musiva-web:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "dratify-web:serve"
+            "devServerTarget": "musiva-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "dratify-web:serve:production"
+              "devServerTarget": "musiva-web:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "dratify-web"
+  "defaultProject": "musiva-web"
 }
