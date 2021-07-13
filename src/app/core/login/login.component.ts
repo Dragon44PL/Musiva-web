@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  title = "Aby kontynuować, zaloguj się do Dratify"
+  title = "Aby kontynuować, zaloguj się do Musiva"
   loginTitle = "Adres e-mail lub nazwa użytkownika"
   passwordTitle = "Hasło"
   passwordReset = "Nie pamiętasz hasła?"
   rememberMe = "Zapamiętaj mnie"
   signIn = "Zaloguj się"
   signUpTitle = "Nie masz jeszcze konta?"
-  signUp = "Zarejestruj się w Dratify"
+  signUp = "Zarejestruj się w Musiva"
 
   constructor() { }
 

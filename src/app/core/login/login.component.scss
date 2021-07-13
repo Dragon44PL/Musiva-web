@@ -12,6 +12,9 @@ $color-backup-gray: #5E5E5E;
 $font-size-standard: 1em;
 $font-size-additional: 0.9em;
 
+$font-size-standard-768px: 0.8em;
+$font-size-additional-768px: 0.7em;
+
 // BUTTONS
 
 $button-padding: 15px 0 15px 0;
@@ -215,4 +218,56 @@ $button-padding: 15px 0 15px 0;
 .login-sign-up-button a:hover {
   background-color: $color-backup-gray;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+
+  .login-content {
+    width: auto;
+    padding: 0 15px 0 15px
+  }
+
+  .login-form-user, .login-form-password {
+    font-size: $font-size-standard-768px;
+  }
+
+  .login-input, .password-input {
+    font-size: $font-size-additional-768px;
+  }
+
+  .login-form-password-not-remember {
+    font-size: $font-size-standard-768px;
+    padding: 15px 0 30px 0;
+  }
+
+  .remember-me-label {
+    font-size: $font-size-additional-768px;
+  }
+
+  .login-form-submit {
+    display: block;
+  }
+
+  .login-form-submit-remember-me {
+    width: 100%;
+    padding: 0 0 10px 0;
+  }
+
+  .login-form-submit-button {
+    width: 100%;
+    font-size: $font-size-standard-768px;
+  }
+
+  .login-sign-up {
+    padding: 0 0 10px 0;
+  }
+
+  .login-sign-up-title {
+    font-size: $font-size-standard-768px;
+  }
+
+  .login-sign-up-button {
+    text-align: center;
+    font-size: $font-size-standard-768px;
+  }
 }
