@@ -171,6 +171,7 @@ $button-padding: 15px 0 15px 0;
   font-weight: bold;
   background-color: $color-main;
   color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .login-form-submit-button input[type=submit]:hover {
@@ -213,6 +214,7 @@ $button-padding: 15px 0 15px 0;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .login-sign-up-button a:hover {
