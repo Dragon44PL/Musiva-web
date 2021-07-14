@@ -1,5 +1,10 @@
 @import "src/styles";
 
+// FONTS
+$font-title: 1.7em;
+$font-title-smaller: 1.2em;
+$font-base: 1em;
+$font-label: 0.9em;
 
 .register-header-image {
   display: flex;
@@ -8,7 +13,7 @@
 }
 
 .register-header-image img {
-  width: 200px;
+  width: 250px;
 }
 
 .register-body {
@@ -20,7 +25,64 @@
 .register-content {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  max-width: 500px;
+}
+
+.register-form-label {
+  display: block;
+  padding: 20px 0 7px 0;
+  font-weight: bold;
+  font-size: $font-label;
+}
+
+.register-form-input {
+  line-height: 20px;
+  padding: 14px;
+  border: 1.5px solid $color-base-gray;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.register-oauth-title {
+  font-size: $font-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-oauth-google {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 25px 0;
+}
+
+.register-oauth-google a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid $color-backup-gray;
+  color: $color_backup-gray;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.register-oauth-google a::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTMzLjUgNTQ0LjMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUzMy41IDI3OC40YzAtMTguNS0xLjUtMzcuMS00LjctNTUuM0gyNzIuMXYxMDQuOGgxNDdjLTYuMSAzMy44LTI1LjcgNjMuNy01NC40IDgyLjd2NjhoODcuN2M1MS41LTQ3LjQgODEuMS0xMTcuNCA4MS4xLTIwMC4yeiIgZmlsbD0iIzQyODVmNCIvPjxwYXRoIGQ9Ik0yNzIuMSA1NDQuM2M3My40IDAgMTM1LjMtMjQuMSAxODAuNC02NS43bC04Ny43LTY4Yy0yNC40IDE2LjYtNTUuOSAyNi05Mi42IDI2LTcxIDAtMTMxLjItNDcuOS0xNTIuOC0xMTIuM0gyOC45djcwLjFjNDYuMiA5MS45IDE0MC4zIDE0OS45IDI0My4yIDE0OS45eiIgZmlsbD0iIzM0YTg1MyIvPjxwYXRoIGQ9Ik0xMTkuMyAzMjQuM2MtMTEuNC0zMy44LTExLjQtNzAuNCAwLTEwNC4yVjE1MEgyOC45Yy0zOC42IDc2LjktMzguNiAxNjcuNSAwIDI0NC40bDkwLjQtNzAuMXoiIGZpbGw9IiNmYmJjMDQiLz48cGF0aCBkPSJNMjcyLjEgMTA3LjdjMzguOC0uNiA3Ni4zIDE0IDEwNC40IDQwLjhsNzcuNy03Ny43QzQwNSAyNC42IDMzOS43LS44IDI3Mi4xIDAgMTY5LjIgMCA3NS4xIDU4IDI4LjkgMTUwbDkwLjQgNzAuMWMyMS41LTY0LjUgODEuOC0xMTIuNCAxNTIuOC0xMTIuNHoiIGZpbGw9IiNlYTQzMzUiLz48L3N2Zz4=");
+  height: 15px;
+  width: 15px;
+  display: block;
+  padding: 0 7px 0 0;
+}
+
+.register-sign-up-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: $font-title-smaller;
+  padding: 10px 0 5px 0;
 }
 
 .register-sign-up-mail {
@@ -46,5 +108,67 @@
 .register-sign-up-birth-date {
   display: flex;
   flex-direction: column;
+  padding: 5px 0 0 0;
 }
 
+.sign-up-birth-date {
+  padding: 5px 0 0 0;
+}
+
+.sign-up-birth-date label {
+  font-size: $font-label;
+  padding: 0 0 5px 0;
+}
+
+.sign-up-birth-date-day {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 0 0;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.sign-up-birth-date-month {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 0 0;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.sign-up-birth-date-year {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.sign-up-birth-date {
+  display: flex;
+}
+
+.sign-up-gender {
+  display: flex;
+  padding: 5px 0 15px 0;
+}
+
+.sign-up-gender-male label, .sign-up-gender-female label, .sign-up-gender-other label {
+  padding: 0 0 0 5px;
+}
+
+.sign-up-gender-male {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.sign-up-gender-female {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.sign-up-gender-other {
+  display: flex;
+  align-items: center;
+}

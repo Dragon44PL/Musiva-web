@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  signUpOAuthTitle = "Aby kontynuować, zaloguj się do Spotify.";
-  signUpOAuthGoogle = "Zarejestruj się przez Google";
+  signUpOAuthTitle = "Zarejestruj się za darmo i zacznij słuchać.";
+  signUpOAuthGoogle = "Kontynuuj z Google";
 
   signUpTitle = "Zarejestruj się za pomocą adresu e-mail";
   signUpMail = "Twój adres e-mail";
@@ -16,6 +16,9 @@ export class RegisterComponent implements OnInit {
   signUpPassword = "Stwórz hasło";
   signUpLogin = "Jak mamy się do Ciebie zwracać?";
   signUpBirthDate = "Podaj swoją datę urodzenia";
+  signUpBirthDateDay = "Dzień";
+  signUpBirthDateMonth = "Miesiąc";
+  signUpBirthDateYear = "Rok";
   signUpGender = "Twoja płeć?";
   signUpOffers = "Chcę otrzymywać wiadomości i oferty od Spotify";
   signUpGenderMale = "Mężczyzna";
