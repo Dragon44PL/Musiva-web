@@ -1,1 +1,84 @@
-<p>register works!</p>
+<div class="register-header">
+  <div class="register-header-image">
+    <img src="assets/musiva.png">
+  </div>
+</div>
+<div class="register-body">
+  <div class="register-content">
+    <div class="register-oauth">
+      <div>
+        <span>{{signUpOAuthTitle}}</span>
+      </div>
+      <div>
+        <a href="">{{signUpOAuthGoogle}}</a>
+      </div>
+    </div>
+    <div class="register-sign-up">
+      <div class="register-sign-up-title">
+        <span>{{signUpTitle}}</span>
+      </div>
+      <div class="register-sign-up-mail">
+        <label for="sign-up-mail">{{signUpMail}}</label>
+        <input type="email" [placeholder]="" id="sign-up-mail">
+      </div>
+      <div class="register-sign-up-mail-confirm">
+        <label for="sing-up-mail-confirm">{{signUpMailConfirm}}</label>
+        <input type="email" [placeholder]="" id="sing-up-mail-confirm">
+      </div>
+      <div class="register-sign-up-password">
+        <label for="sing-up-password">{{signUpPassword}}</label>
+        <input type="password" [placeholder]="" id="sing-up-password">
+      </div>
+      <div class="register-sign-up-login">
+        <label for="sign-up-login">{{signUpLogin}}</label>
+        <input type="text" [placeholder]="" id="sign-up-login">
+      </div>
+      <div class="register-sign-up-birth-date">
+        <span>{{signUpBirthDate}}</span>
+        <div class="sign-up-birth-date">
+          <div>
+            <label for="sign-up-birth-date-day"></label>
+            <input type="text" id="sign-up-birth-date-day">
+          </div>
+          <div>
+            <label for="sign-up-birth-date-month"></label>
+            <input type="text" id="sign-up-birth-date-month">
+          </div>
+          <div>
+            <label for="sign-up-birth-date-year"></label>
+            <input type="text" id="sign-up-birth-date-year">
+          </div>
+        </div>
+      </div>
+      <div class="register-sign-up-gender">
+        <span>{{signUpGender}}</span>
+        <div class="sing-up-gender">
+          <div class="sign-up-gender-male">
+            <input type="radio" id="sign-up-gender-male">
+            <label for="sign-up-gender-male">{{signUpGenderMale}}</label>
+          </div>
+          <div class="sign-up-gender-female">
+            <input type="radio" id="sign-up-gender-female">
+            <label for="sign-up-gender-female">{{signUpGenderFemale}}</label>
+          </div>
+          <div class="sign-up-gender-other">
+            <input type="radio" id="sign-up-gender-other">
+            <label for="sign-up-gender-other">{{signUpGenderOther}}</label>
+          </div>
+        </div>
+      </div>
+      <div class="register-sign-up-offers">
+        <span>{{signUpOffers}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="register-submit">
+    <div>
+      <a href="">{{signUpButton}}</a>
+    </div>
+    <div>
+      <span>{{signInTitle}}</span>
+      <a href="/login">{{signInLink}}</a>
+    </div>
+  </div>
+</div>
