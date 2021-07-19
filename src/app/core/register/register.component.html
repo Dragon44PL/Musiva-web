@@ -38,15 +38,29 @@
         <div class="sign-up-birth-date">
           <div class="sign-up-birth-date-day">
             <label for="sign-up-birth-date-day">{{signUpBirthDateDay}}</label>
-            <input type="text" id="sign-up-birth-date-day" class="register-form-input">
+            <input type="text" id="sign-up-birth-date-day" class="register-form-input" [placeholder]="signUpBirthDateDayShort">
           </div>
           <div class="sign-up-birth-date-month">
             <label for="sign-up-birth-date-month">{{signUpBirthDateMonth}}</label>
-            <input type="text" id="sign-up-birth-date-month" class="register-form-input">
+            <select class="register-form-select" id="sign-up-birth-date-month">
+              <option selected disabled>Miesiąc</option>
+              <option value="1">styczeń</option>
+              <option value="2">luty</option>
+              <option value="3">marzec</option>
+              <option value="4">kwiecień</option>
+              <option value="5">maj</option>
+              <option value="6">czerwiec</option>
+              <option value="7">lipiec</option>
+              <option value="8">sierpień</option>
+              <option value="9">wrzesień</option>
+              <option value="10">październik</option>
+              <option value="11">listopad</option>
+              <option value="12">grudzień</option>
+            </select>
           </div>
           <div class="sign-up-birth-date-year">
             <label for="sign-up-birth-date-year">{{signUpBirthDateYear}}</label>
-            <input type="text" id="sign-up-birth-date-year" class="register-form-input">
+            <input type="text" id="sign-up-birth-date-year" class="register-form-input" [placeholder]="signUpBirthDateYearShort">
           </div>
         </div>
       </div>
@@ -62,11 +76,17 @@
           </div>
           <div class="sign-up-gender-female">
             <input type="radio" id="sign-up-gender-female">
-            <label for="sign-up-gender-female">{{signUpGenderFemale}}</label>
+            <label for="sign-up-gender-female" class="sign-up-gender-female-label">
+              <span class="sign-up-radio-button"></span>
+              <label for="sign-up-gender-female">{{signUpGenderFemale}}</label>
+            </label>
           </div>
           <div class="sign-up-gender-other">
             <input type="radio" id="sign-up-gender-other">
-            <label for="sign-up-gender-other">{{signUpGenderOther}}</label>
+            <label for="sign-up-gender-other" class="sign-up-gender-other-label">
+              <span class="sign-up-radio-button"></span>
+              <label for="sign-up-gender-other">{{signUpGenderOther}}</label>
+            </label>
           </div>
         </div>
       </div>
@@ -80,10 +100,10 @@
     </div>
   </div>
   <div class="register-submit">
-    <div>
-      <a href="">{{signUpButton}}</a>
+    <div class="register-submit-button">
+      <a>{{signUpButton}}</a>
     </div>
-    <div>
+    <div class="submit-sign-in">
       <span>{{signInTitle}}</span>
       <a href="/login">{{signInLink}}</a>
     </div>

@@ -1,5 +1,8 @@
 @import "src/styles";
 
+// COLORS
+$color-input-option: #505050;
+
 // FONTS
 $font-title: 1.7em;
 $font-title-smaller: 1.2em;
@@ -43,6 +46,19 @@ $font-label: 0.9em;
   font-size: 1em;
 }
 
+.register-form-input::placeholder {
+  color: $color-input-option;
+}
+
+.register-form-select {
+  line-height: 20px;
+  padding: 14px;
+  border: 1.5px solid $color-base-gray;
+  border-radius: 4px;
+  font-size: 1em;
+  color: $color-input-option;
+}
+
 .register-oauth-title {
   font-size: $font-title;
   font-weight: bold;
@@ -64,10 +80,16 @@ $font-label: 0.9em;
   border: 2px solid $color-backup-gray;
   color: $color_backup-gray;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: bolder;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.register-oauth-google a:hover {
+  background-color: $color-backup-gray;
+  color: #ffffff;
 }
 
 .register-oauth-google a::before {
@@ -168,7 +190,55 @@ $font-label: 0.9em;
   padding: 0 20px 0 0;
 }
 
+.sign-up-gender-female label {
+  padding: 0 0 0 5px;
+}
+
 .sign-up-gender-other {
   display: flex;
   align-items: center;
+}
+
+.register-sign-up-offers {
+  padding: 10px 0 0 0;
+}
+
+.remember-me-label {
+  padding: 0 0 0 10px;
+}
+
+.register-submit {
+  padding: 20px 0 20px 0;
+}
+
+.register-submit-button {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px 0;
+}
+
+.register-submit-button a {
+  padding: 19px 0;
+  border-radius: 35px;
+  width: 100%;
+  background-color: $color-main-additional;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.register-submit-button a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.submit-sign-in {
+  padding: 15px 0;
+}
+
+.submit-sign-in a {
+  text-decoration: underline;
+  color: $color-main-additional;
+  padding: 0 0 0 5px;
 }

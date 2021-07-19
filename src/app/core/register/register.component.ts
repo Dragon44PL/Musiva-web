@@ -17,16 +17,18 @@ export class RegisterComponent implements OnInit {
   signUpLogin = "Jak mamy się do Ciebie zwracać?";
   signUpBirthDate = "Podaj swoją datę urodzenia";
   signUpBirthDateDay = "Dzień";
+  signUpBirthDateDayShort = "DD";
   signUpBirthDateMonth = "Miesiąc";
   signUpBirthDateYear = "Rok";
+  signUpBirthDateYearShort = "YYYY";
   signUpGender = "Twoja płeć?";
-  signUpOffers = "Chcę otrzymywać wiadomości i oferty od Spotify";
+  signUpOffers = "Chcę otrzymywać wiadomości i oferty od Musiva";
   signUpGenderMale = "Mężczyzna";
   signUpGenderFemale = "Kobieta";
-  signUpGenderOther = "Inne";
-  signUpButton = "";
-  signInTitle = "";
-  signInLink = "Zaloguj się";
+  signUpGenderOther = "Osoba niebinarna";
+  signUpButton = "Zarejestruj się";
+  signInTitle = "Masz już konto?";
+  signInLink = "Zaloguj się.";
 
   constructor() { }
 
