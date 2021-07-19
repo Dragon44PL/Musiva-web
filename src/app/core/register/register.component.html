@@ -12,6 +12,11 @@
       <div class="register-oauth-google">
         <a href="">{{signUpOAuthGoogle}}</a>
       </div>
+      <div class="register-oauth-option">
+        <hr>
+        <span>lub</span>
+        <hr>
+      </div>
     </div>
     <div class="register-sign-up">
       <div class="register-sign-up-title">
@@ -37,11 +42,11 @@
         <span class="register-form-label">{{signUpBirthDate}}</span>
         <div class="sign-up-birth-date">
           <div class="sign-up-birth-date-day">
-            <label for="sign-up-birth-date-day">{{signUpBirthDateDay}}</label>
-            <input type="text" id="sign-up-birth-date-day" class="register-form-input" [placeholder]="signUpBirthDateDayShort">
+            <label for="sign-up-birth-date-day" class="sign-up-birth-date-label">{{signUpBirthDateDay}}</label>
+            <input type="text" id="sign-up-birth-date-day" class="register-form-year-input" [placeholder]="signUpBirthDateDayShort">
           </div>
           <div class="sign-up-birth-date-month">
-            <label for="sign-up-birth-date-month">{{signUpBirthDateMonth}}</label>
+            <label for="sign-up-birth-date-month" class="sign-up-birth-date-label">{{signUpBirthDateMonth}}</label>
             <select class="register-form-select" id="sign-up-birth-date-month">
               <option selected disabled>Miesiąc</option>
               <option value="1">styczeń</option>
@@ -59,8 +64,8 @@
             </select>
           </div>
           <div class="sign-up-birth-date-year">
-            <label for="sign-up-birth-date-year">{{signUpBirthDateYear}}</label>
-            <input type="text" id="sign-up-birth-date-year" class="register-form-input" [placeholder]="signUpBirthDateYearShort">
+            <label for="sign-up-birth-date-year" class="sign-up-birth-date-label">{{signUpBirthDateYear}}</label>
+            <input type="text" id="sign-up-birth-date-year" class="register-form-year-input" [placeholder]="signUpBirthDateYearShort">
           </div>
         </div>
       </div>
@@ -68,21 +73,21 @@
         <span class="register-form-label">{{signUpGender}}</span>
         <div class="sign-up-gender">
           <div class="sign-up-gender-male">
-            <input type="radio" id="sign-up-gender-male">
+            <input type="radio" id="sign-up-gender-male" name="gender">
             <label for="sign-up-gender-male" class="sign-up-gender-male-label">
               <span class="sign-up-radio-button"></span>
               <label for="sign-up-gender-male">{{signUpGenderMale}}</label>
             </label>
           </div>
           <div class="sign-up-gender-female">
-            <input type="radio" id="sign-up-gender-female">
+            <input type="radio" id="sign-up-gender-female" name="gender">
             <label for="sign-up-gender-female" class="sign-up-gender-female-label">
               <span class="sign-up-radio-button"></span>
               <label for="sign-up-gender-female">{{signUpGenderFemale}}</label>
             </label>
           </div>
           <div class="sign-up-gender-other">
-            <input type="radio" id="sign-up-gender-other">
+            <input type="radio" id="sign-up-gender-other" name="gender">
             <label for="sign-up-gender-other" class="sign-up-gender-other-label">
               <span class="sign-up-radio-button"></span>
               <label for="sign-up-gender-other">{{signUpGenderOther}}</label>
@@ -97,15 +102,15 @@
           <span class="remember-me-label-text">{{signUpOffers}}</span>
         </label>
       </div>
-    </div>
-  </div>
-  <div class="register-submit">
-    <div class="register-submit-button">
-      <a>{{signUpButton}}</a>
-    </div>
-    <div class="submit-sign-in">
-      <span>{{signInTitle}}</span>
-      <a href="/login">{{signInLink}}</a>
+      <div class="register-submit">
+        <div class="register-submit-button">
+          <a>{{signUpButton}}</a>
+        </div>
+        <div class="submit-sign-in">
+          <span>{{signInTitle}}</span>
+          <a href="/login">{{signInLink}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

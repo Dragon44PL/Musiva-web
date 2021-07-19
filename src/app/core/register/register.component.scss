@@ -9,6 +9,9 @@ $font-title-smaller: 1.2em;
 $font-base: 1em;
 $font-label: 0.9em;
 
+$font-size-standard-768px: 0.8em;
+$font-size-additional-768px: 0.7em;
+
 .register-header-image {
   display: flex;
   justify-content: center;
@@ -28,7 +31,7 @@ $font-label: 0.9em;
 .register-content {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  width: 40%;
 }
 
 .register-form-label {
@@ -38,16 +41,51 @@ $font-label: 0.9em;
   font-size: $font-label;
 }
 
+.register-oauth-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-oauth-option hr {
+  width: 40%;
+  background-color: $color-base-gray;
+  border: none;
+  outline: none;
+  height: 1px;
+}
+
+.register-oauth-option span {
+  color: $color-additional-gray;
+}
+
 .register-form-input {
+  box-sizing: border-box;
   line-height: 20px;
   padding: 14px;
   border: 1.5px solid $color-base-gray;
   border-radius: 4px;
   font-size: 1em;
+  width: 100%;
+  outline: none;
+}
+
+.register-form-year-input {
+  line-height: 20px;
+  padding: 14px;
+  border: 1.5px solid $color-base-gray;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
 }
 
 .register-form-input::placeholder {
   color: $color-input-option;
+}
+
+.register-form-input:focus {
+  outline: none;
+  border: 1.5px solid #000000;
 }
 
 .register-form-select {
@@ -57,6 +95,8 @@ $font-label: 0.9em;
   border-radius: 4px;
   font-size: 1em;
   color: $color-input-option;
+  height: 100%;
+  outline: none;
 }
 
 .register-oauth-title {
@@ -85,6 +125,7 @@ $font-label: 0.9em;
   letter-spacing: 3px;
   font-weight: bolder;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-align: center;
 }
 
 .register-oauth-google a:hover {
@@ -200,6 +241,8 @@ $font-label: 0.9em;
 }
 
 .register-sign-up-offers {
+  display: flex;
+  align-items: center;
   padding: 10px 0 0 0;
 }
 
@@ -209,6 +252,11 @@ $font-label: 0.9em;
 
 .register-submit {
   padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .register-submit-button {
@@ -235,10 +283,80 @@ $font-label: 0.9em;
 
 .submit-sign-in {
   padding: 15px 0;
+  text-align: center;
 }
 
 .submit-sign-in a {
   text-decoration: underline;
   color: $color-main-additional;
   padding: 0 0 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .register-content {
+    width: auto;
+    padding: 0 15px 0 15px;
+  }
+
+  .register-form-label {
+    font-size: $font-size-standard-768px;
+    text-align: center;
+  }
+
+  .register-oauth-google a {
+    width: 100%;
+  }
+
+  .register-oauth-google a::before {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-up-birth-date {
+    flex-direction: column;
+  }
+
+  .sign-up-birth-date-label {
+    text-align: center;
+  }
+
+  .sign-up-birth-date-day {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .sign-up-birth-date-month {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .sign-up-birth-date-year {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+
+  .register-form-input, .register-form-year-input, .register-form-select {
+    font-size: $font-size-standard-768px;
+  }
+
+  .sign-up-gender {
+    flex-direction: column;
+  }
+
+  .sign-up-gender-male {
+    padding: 0 0 10px 0;
+  }
+
+  .sign-up-gender-female {
+    padding: 0 0 10px 0;
+  }
+
+  .register-submit {
+    padding: 30px 0 20px 0;
+    width: 100%;
+  }
+
 }
