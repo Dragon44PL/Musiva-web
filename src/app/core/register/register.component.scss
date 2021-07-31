@@ -1,0 +1,362 @@
+@import "src/styles";
+
+// COLORS
+$color-input-option: #505050;
+
+// FONTS
+$font-title: 1.7em;
+$font-title-smaller: 1.2em;
+$font-base: 1em;
+$font-label: 0.9em;
+
+$font-size-standard-768px: 0.8em;
+$font-size-additional-768px: 0.7em;
+
+.register-header-image {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.register-header-image img {
+  width: 250px;
+}
+
+.register-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.register-form-label {
+  display: block;
+  padding: 20px 0 7px 0;
+  font-weight: bold;
+  font-size: $font-label;
+}
+
+.register-oauth-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-oauth-option hr {
+  width: 40%;
+  background-color: $color-base-gray;
+  border: none;
+  outline: none;
+  height: 1px;
+}
+
+.register-oauth-option span {
+  color: $color-additional-gray;
+}
+
+.register-form-input {
+  box-sizing: border-box;
+  line-height: 20px;
+  padding: 14px;
+  border: 1.5px solid $color-base-gray;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+  outline: none;
+}
+
+.register-form-year-input {
+  line-height: 20px;
+  padding: 14px;
+  border: 1.5px solid $color-base-gray;
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+}
+
+.register-form-input::placeholder {
+  color: $color-input-option;
+}
+
+.register-form-input:focus {
+  outline: none;
+  border: 1.5px solid #000000;
+}
+
+.register-form-select {
+  line-height: 20px;
+  padding: 14px;
+  border: 1.5px solid $color-base-gray;
+  border-radius: 4px;
+  font-size: 1em;
+  color: $color-input-option;
+  height: 100%;
+  outline: none;
+}
+
+.register-oauth-title {
+  font-size: $font-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-oauth-google {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 25px 0;
+}
+
+.register-oauth-google a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid $color-backup-gray;
+  color: $color_backup-gray;
+  justify-content: center;
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-align: center;
+}
+
+.register-oauth-google a:hover {
+  background-color: $color-backup-gray;
+  color: #ffffff;
+}
+
+.register-oauth-google a::before {
+  content: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTMzLjUgNTQ0LjMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUzMy41IDI3OC40YzAtMTguNS0xLjUtMzcuMS00LjctNTUuM0gyNzIuMXYxMDQuOGgxNDdjLTYuMSAzMy44LTI1LjcgNjMuNy01NC40IDgyLjd2NjhoODcuN2M1MS41LTQ3LjQgODEuMS0xMTcuNCA4MS4xLTIwMC4yeiIgZmlsbD0iIzQyODVmNCIvPjxwYXRoIGQ9Ik0yNzIuMSA1NDQuM2M3My40IDAgMTM1LjMtMjQuMSAxODAuNC02NS43bC04Ny43LTY4Yy0yNC40IDE2LjYtNTUuOSAyNi05Mi42IDI2LTcxIDAtMTMxLjItNDcuOS0xNTIuOC0xMTIuM0gyOC45djcwLjFjNDYuMiA5MS45IDE0MC4zIDE0OS45IDI0My4yIDE0OS45eiIgZmlsbD0iIzM0YTg1MyIvPjxwYXRoIGQ9Ik0xMTkuMyAzMjQuM2MtMTEuNC0zMy44LTExLjQtNzAuNCAwLTEwNC4yVjE1MEgyOC45Yy0zOC42IDc2LjktMzguNiAxNjcuNSAwIDI0NC40bDkwLjQtNzAuMXoiIGZpbGw9IiNmYmJjMDQiLz48cGF0aCBkPSJNMjcyLjEgMTA3LjdjMzguOC0uNiA3Ni4zIDE0IDEwNC40IDQwLjhsNzcuNy03Ny43QzQwNSAyNC42IDMzOS43LS44IDI3Mi4xIDAgMTY5LjIgMCA3NS4xIDU4IDI4LjkgMTUwbDkwLjQgNzAuMWMyMS41LTY0LjUgODEuOC0xMTIuNCAxNTIuOC0xMTIuNHoiIGZpbGw9IiNlYTQzMzUiLz48L3N2Zz4=");
+  height: 15px;
+  width: 15px;
+  display: block;
+  padding: 0 7px 0 0;
+}
+
+.register-sign-up-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: $font-title-smaller;
+  padding: 10px 0 5px 0;
+}
+
+.register-sign-up-mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-sign-up-mail-confirm {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-sign-up-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-sign-up-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-sign-up-birth-date {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 0 0;
+}
+
+.sign-up-birth-date {
+  padding: 5px 0 0 0;
+}
+
+.sign-up-birth-date label {
+  font-size: $font-label;
+  padding: 0 0 5px 0;
+}
+
+.sign-up-birth-date-day {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 0 0;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.sign-up-birth-date-month {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px 0 0;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.sign-up-birth-date-year {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.sign-up-birth-date {
+  display: flex;
+}
+
+.sign-up-gender {
+  display: flex;
+  padding: 5px 0 15px 0;
+}
+
+.sign-up-gender-male label, .sign-up-gender-female label, .sign-up-gender-other label {
+  padding: 0 0 0 5px;
+}
+
+.sign-up-gender-male {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.sign-up-gender-female {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.sign-up-gender-female label {
+  padding: 0 0 0 5px;
+}
+
+.sign-up-gender-other {
+  display: flex;
+  align-items: center;
+}
+
+.register-sign-up-offers {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 0;
+}
+
+.remember-me-label {
+  padding: 0 0 0 10px;
+}
+
+.register-submit {
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.register-submit-button {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px 0;
+}
+
+.register-submit-button a {
+  padding: 19px 0;
+  border-radius: 35px;
+  width: 100%;
+  background-color: $color-main-additional;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.register-submit-button a:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.submit-sign-in {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.submit-sign-in a {
+  text-decoration: underline;
+  color: $color-main-additional;
+  padding: 0 0 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .register-content {
+    width: auto;
+    padding: 0 15px 0 15px;
+  }
+
+  .register-form-label {
+    font-size: $font-size-standard-768px;
+    text-align: center;
+  }
+
+  .register-oauth-google a {
+    width: 100%;
+  }
+
+  .register-oauth-google a::before {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-up-birth-date {
+    flex-direction: column;
+  }
+
+  .sign-up-birth-date-label {
+    text-align: center;
+  }
+
+  .sign-up-birth-date-day {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .sign-up-birth-date-month {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .sign-up-birth-date-year {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+
+  .register-form-input, .register-form-year-input, .register-form-select {
+    font-size: $font-size-standard-768px;
+  }
+
+  .sign-up-gender {
+    flex-direction: column;
+  }
+
+  .sign-up-gender-male {
+    padding: 0 0 10px 0;
+  }
+
+  .sign-up-gender-female {
+    padding: 0 0 10px 0;
+  }
+
+  .register-submit {
+    padding: 30px 0 20px 0;
+    width: 100%;
+  }
+
+}
