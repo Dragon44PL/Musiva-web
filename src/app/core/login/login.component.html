@@ -23,11 +23,7 @@
         </div>
         <div class="login-form-submit">
           <div class="login-form-submit-remember-me">
-            <input type="checkbox" id="remember-me">
-            <label for="remember-me" class="remember-me-label">
-              <span class="remember-me-checkbox"></span>
-              <span class="remember-me-label-text">{{rememberMe}}</span>
-            </label>
+            <check-box [label]="rememberMe" (checked)="onRememberMe($event)"></check-box>
           </div>
           <div class="login-form-submit-button">
             <input type="submit" [value]="signIn">
