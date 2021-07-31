@@ -35,4 +35,5 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSignUpOffer() {}
 }

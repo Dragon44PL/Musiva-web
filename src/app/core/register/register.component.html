@@ -96,11 +96,7 @@
         </div>
       </div>
       <div class="register-sign-up-offers">
-        <input type="checkbox" id="remember-me">
-        <label for="remember-me" class="remember-me-label">
-          <span class="remember-me-checkbox"></span>
-          <span class="remember-me-label-text">{{signUpOffers}}</span>
-        </label>
+        <check-box [label]="signUpOffers" (checked)="onSignUpOffer()"></check-box>
       </div>
       <div class="register-submit">
         <div class="register-submit-button">
