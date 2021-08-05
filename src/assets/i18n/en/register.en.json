@@ -1,0 +1,55 @@
+{
+  "title": {
+    "oauth": "Sign up for free to start listening.",
+    "register": "Sign up with your email address",
+    "signIn": "Have an account?"
+  },
+  "text": {
+    "or": "or",
+    "mail": "What's your email?",
+    "mailConfirm": "Confirm your email",
+    "password": "Create a password",
+    "login": "What should we call you?",
+    "birth": {
+      "birthDate": "What's your date of birth?",
+      "birthDateDay": "Day",
+      "birthDateMonth": "Month",
+      "birthDateYear": "Year"
+    },
+    "gender": {
+      "name": "What's your gender?",
+      "male": "Male",
+      "female": "Female",
+      "other": "Non-binary"
+    },
+    "offers": "Share my registration data with Musiva's content providers for marketing purposes.",
+    "register": "Sign up",
+    "signIn": "Log in."
+  },
+  "placeholder": {
+    "oauthGoogle": "Sign up with Google",
+    "mail": "Enter your email.",
+    "mailConfirm": "Enter your email again.",
+    "password": "Create a password.",
+    "login": "Enter a profile name.",
+    "birth": {
+      "birthDateDay": "DD",
+      "birthDateYear": "YYYY",
+      "months": {
+        "month": "Month",
+        "january": "january",
+        "february": "february",
+        "march": "march",
+        "april": "april",
+        "may": "may",
+        "june": "june",
+        "july": "july",
+        "august": "august",
+        "september": "september",
+        "october": "october",
+        "november": "november",
+        "december": "december"
+      }
+    }
+  }
+}

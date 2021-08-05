@@ -7,104 +7,104 @@
   <div class="register-content">
     <div class="register-oauth">
       <div class="register-oauth-title">
-        <span>{{signUpOAuthTitle}}</span>
+        <span>{{register.title.oauth}}</span>
       </div>
       <div class="register-oauth-google">
-        <a href="">{{signUpOAuthGoogle}}</a>
+        <a href="">{{register.placeholder.oauthGoogle}}</a>
       </div>
       <div class="register-oauth-option">
         <hr>
-        <span>lub</span>
+        <span>{{register.text.or}}</span>
         <hr>
       </div>
     </div>
     <div class="register-sign-up">
       <div class="register-sign-up-title">
-        <span>{{signUpTitle}}</span>
+        <span>{{register.title.register}}</span>
       </div>
       <div class="register-sign-up-mail">
-        <label for="sign-up-mail" class="register-form-label">{{signUpMail}}</label>
-        <input type="email" [placeholder]="signUpMail" id="sign-up-mail" class="register-form-input">
+        <label for="sign-up-mail" class="register-form-label">{{register.text.mail}}</label>
+        <input type="email" [placeholder]="register.placeholder.mail" id="sign-up-mail" class="register-form-input">
       </div>
       <div class="register-sign-up-mail-confirm">
-        <label for="sing-up-mail-confirm" class="register-form-label">{{signUpMailConfirm}}</label>
-        <input type="email" [placeholder]="signUpMailConfirm" id="sing-up-mail-confirm" class="register-form-input">
+        <label for="sing-up-mail-confirm" class="register-form-label">{{register.text.mailConfirm}}</label>
+        <input type="email" [placeholder]="register.placeholder.mailConfirm" id="sing-up-mail-confirm" class="register-form-input">
       </div>
       <div class="register-sign-up-password">
-        <label for="sing-up-password" class="register-form-label">{{signUpPassword}}</label>
-        <input type="password" [placeholder]="signUpPassword" id="sing-up-password" class="register-form-input">
+        <label for="sing-up-password" class="register-form-label">{{register.text.password}}</label>
+        <input type="password" [placeholder]="register.placeholder.password" id="sing-up-password" class="register-form-input">
       </div>
       <div class="register-sign-up-login">
-        <label for="sign-up-login" class="register-form-label">{{signUpLogin}}</label>
-        <input type="text" [placeholder]="signUpLogin" id="sign-up-login" class="register-form-input">
+        <label for="sign-up-login" class="register-form-label">{{register.text.login}}</label>
+        <input type="text" [placeholder]="register.placeholder.login" id="sign-up-login" class="register-form-input">
       </div>
       <div class="register-sign-up-birth-date">
-        <span class="register-form-label">{{signUpBirthDate}}</span>
+        <span class="register-form-label">{{register.text.birth.birthDate}}</span>
         <div class="sign-up-birth-date">
           <div class="sign-up-birth-date-day">
-            <label for="sign-up-birth-date-day" class="sign-up-birth-date-label">{{signUpBirthDateDay}}</label>
-            <input type="text" id="sign-up-birth-date-day" class="register-form-year-input" [placeholder]="signUpBirthDateDayShort">
+            <label for="sign-up-birth-date-day" class="sign-up-birth-date-label">{{register.text.birth.birthDateDay}}</label>
+            <input type="text" id="sign-up-birth-date-day" class="register-form-year-input" [placeholder]="register.placeholder.birth.birthDateDay">
           </div>
           <div class="sign-up-birth-date-month">
-            <label for="sign-up-birth-date-month" class="sign-up-birth-date-label">{{signUpBirthDateMonth}}</label>
+            <label for="sign-up-birth-date-month" class="sign-up-birth-date-label">{{register.text.birth.birthDateMonth}}</label>
             <select class="register-form-select" id="sign-up-birth-date-month">
-              <option selected disabled>Miesiąc</option>
-              <option value="1">styczeń</option>
-              <option value="2">luty</option>
-              <option value="3">marzec</option>
-              <option value="4">kwiecień</option>
-              <option value="5">maj</option>
-              <option value="6">czerwiec</option>
-              <option value="7">lipiec</option>
-              <option value="8">sierpień</option>
-              <option value="9">wrzesień</option>
-              <option value="10">październik</option>
-              <option value="11">listopad</option>
-              <option value="12">grudzień</option>
+              <option selected disabled>{{register.placeholder.birth.months.month}}</option>
+              <option value="1">{{register.placeholder.birth.months.january}}</option>
+              <option value="2">{{register.placeholder.birth.months.february}}</option>
+              <option value="3">{{register.placeholder.birth.months.march}}</option>
+              <option value="4">{{register.placeholder.birth.months.april}}</option>
+              <option value="5">{{register.placeholder.birth.months.may}}</option>
+              <option value="6">{{register.placeholder.birth.months.june}}</option>
+              <option value="7">{{register.placeholder.birth.months.july}}</option>
+              <option value="8">{{register.placeholder.birth.months.august}}</option>
+              <option value="9">{{register.placeholder.birth.months.september}}</option>
+              <option value="10">{{register.placeholder.birth.months.october}}</option>
+              <option value="11">{{register.placeholder.birth.months.november}}</option>
+              <option value="12">{{register.placeholder.birth.months.december}}</option>
             </select>
           </div>
           <div class="sign-up-birth-date-year">
-            <label for="sign-up-birth-date-year" class="sign-up-birth-date-label">{{signUpBirthDateYear}}</label>
-            <input type="text" id="sign-up-birth-date-year" class="register-form-year-input" [placeholder]="signUpBirthDateYearShort">
+            <label for="sign-up-birth-date-year" class="sign-up-birth-date-label">{{register.text.birth.birthDateYear}}</label>
+            <input type="text" id="sign-up-birth-date-year" class="register-form-year-input" [placeholder]="register.placeholder.birth.birthDateYear">
           </div>
         </div>
       </div>
       <div class="register-sign-up-gender">
-        <span class="register-form-label">{{signUpGender}}</span>
+        <span class="register-form-label">{{register.text.gender.name}}</span>
         <div class="sign-up-gender">
           <div class="sign-up-gender-male">
             <input type="radio" id="sign-up-gender-male" name="gender">
             <label for="sign-up-gender-male" class="sign-up-gender-male-label">
               <span class="sign-up-radio-button"></span>
-              <label for="sign-up-gender-male">{{signUpGenderMale}}</label>
+              <label for="sign-up-gender-male">{{register.text.gender.male}}</label>
             </label>
           </div>
           <div class="sign-up-gender-female">
             <input type="radio" id="sign-up-gender-female" name="gender">
             <label for="sign-up-gender-female" class="sign-up-gender-female-label">
               <span class="sign-up-radio-button"></span>
-              <label for="sign-up-gender-female">{{signUpGenderFemale}}</label>
+              <label for="sign-up-gender-female">{{register.text.gender.female}}</label>
             </label>
           </div>
           <div class="sign-up-gender-other">
             <input type="radio" id="sign-up-gender-other" name="gender">
             <label for="sign-up-gender-other" class="sign-up-gender-other-label">
               <span class="sign-up-radio-button"></span>
-              <label for="sign-up-gender-other">{{signUpGenderOther}}</label>
+              <label for="sign-up-gender-other">{{register.text.gender.other}}</label>
             </label>
           </div>
         </div>
       </div>
       <div class="register-sign-up-offers">
-        <check-box [label]="signUpOffers" (checked)="onSignUpOffer()"></check-box>
+        <check-box [label]="register.text.offers" (checked)="onSignUpOffer()"></check-box>
       </div>
       <div class="register-submit">
         <div class="register-submit-button">
-          <a>{{signUpButton}}</a>
+          <a>{{register.text.register}}</a>
         </div>
         <div class="submit-sign-in">
-          <span>{{signInTitle}}</span>
-          <a href="/login">{{signInLink}}</a>
+          <span>{{register.title.signIn}}</span>
+          <a href="/login">{{register.text.signIn}}</a>
         </div>
       </div>
     </div>

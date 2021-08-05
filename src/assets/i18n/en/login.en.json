@@ -1,0 +1,18 @@
+{
+  "title": {
+    "header": "Sign in to Musiva to start listening.",
+    "login": "Email address or username",
+    "password": "Password",
+    "register": "Don't have an account?"
+  },
+  "text": {
+    "passwordReset": "Forgot your password?",
+    "rememberMe": "Remember me",
+    "signIn": "Log in",
+    "register": "Sign up for Musiva"
+  },
+  "placeholder": {
+    "login": "Email address or username",
+    "password": "Password"
+  }
+}

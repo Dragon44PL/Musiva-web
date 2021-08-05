@@ -1,0 +1,55 @@
+{
+  "title": {
+    "oauth": "Zarejestruj się za darmo i zacznij słuchać.",
+    "register": "Zarejestruj się za pomocą adresu e-mail",
+    "signIn": "Masz już konto?"
+  },
+  "text": {
+    "or": "lub",
+    "mail": "Twój adres e-mail",
+    "mailConfirm": "Potwierdź swój e-mail",
+    "password": "Stwórz hasło",
+    "login": "Jak mamy się do Ciebie zwracać?",
+    "birth": {
+      "birthDate": "Podaj swoją datę urodzenia",
+      "birthDateDay": "Dzień",
+      "birthDateMonth": "Miesiąc",
+      "birthDateYear": "Rok"
+    },
+    "gender": {
+      "name": "Twoja płeć?",
+      "male": "Mężczyzna",
+      "female": "Kobieta",
+      "other": "Osoba niebinarna"
+    },
+    "offers": "Chcę otrzymywać wiadomości i oferty od Musiva",
+    "register": "Zarejestruj się",
+    "signIn": "Zaloguj się."
+  },
+  "placeholder": {
+    "oauthGoogle": "Kontynuuj z Google",
+    "mail": "Twój adres e-mail",
+    "mailConfirm": "Potwierdź swój e-mail",
+    "password": "Stwórz hasło",
+    "login": "Jak mamy się do Ciebie zwracać?",
+    "birth": {
+      "birthDateDay": "DD",
+      "birthDateYear": "YYYY",
+      "months": {
+        "month": "Miesiąc",
+        "january": "styczeń",
+        "february": "luty",
+        "march": "marzec",
+        "april": "kwiecień",
+        "may": "maj",
+        "june": "czerwiec",
+        "july": "lipiec",
+        "august": "sierpień",
+        "september": "wrzesień",
+        "october": "październik",
+        "november": "listopad",
+        "december": "grudzień"
+      }
+    }
+  }
+}

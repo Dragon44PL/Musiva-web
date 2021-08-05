@@ -1,0 +1,18 @@
+{
+  "title": {
+    "header": "Aby kontynuować, zaloguj się do Musiva",
+    "login": "Adres e-mail lub nazwa użytkownika",
+    "password": "Hasło",
+    "register": "Nie masz jeszcze konta?"
+  },
+  "text": {
+    "passwordReset": "Nie pamiętasz hasła?",
+    "rememberMe": "Zapamiętaj mnie",
+    "signIn": "Zaloguj się",
+    "register": "Zarejestruj się w Musiva"
+  },
+  "placeholder": {
+    "login": "Adres e-mail lub nazwa użytkownika",
+    "password": "Hasło"
+  }
+}

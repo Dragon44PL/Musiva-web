@@ -3,8 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from "./core/login/login.component";
 import {RegisterComponent} from "./core/register/register.component";
 
-const routes: Routes = [  { path: 'login', component: LoginComponent },
-                          { path: 'register', component: RegisterComponent }]  ;
+const routes: Routes = [  { path: '', redirectTo: "en/login", pathMatch: "full" },
+                          { path: ':languageCode/login', component: LoginComponent },
+                          { path: ':languageCode/register', component: RegisterComponent }]  ;
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
