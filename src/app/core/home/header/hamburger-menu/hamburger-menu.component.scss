@@ -1,0 +1,152 @@
+@import "src/styles";
+
+// COLORS
+$color-hamburger-line: #fafafa;
+$color-menu-background: #000000;
+
+ul {
+  margin: 0;
+  margin-inline: 0;
+  padding: 0 30px 0 0;
+  padding-inline: 0;
+}
+
+.hamburger {
+  position: relative;
+  z-index: 100000;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger-line {
+  display: block;
+  background-color: $color-hamburger-line;
+  height: 4px;
+  width: 30px;
+  border-radius: 5px;
+}
+
+.between {
+  margin: 4px 0;
+}
+
+.transition-disappear {
+  animation: disappear;
+  animation-duration: 0.15s;
+  animation-timing-function: linear;
+  opacity: 0;
+  border-radius: 0;
+}
+
+.transition-move-down {
+  animation: move-down;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  transform: rotateZ(-45deg) translate(-4px, 8px);
+  border-radius: 0;
+}
+
+.transition-move-up {
+  animation: move-up;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  transform: rotateZ(45deg) translate(-4px, -7.5px);
+  border-radius: 0;
+}
+
+@keyframes disappear {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+@keyframes move-down {
+  0% {transform: none}
+  100% {transform: rotateZ(-45deg) translate(-4px, 7.5px);}
+}
+
+@keyframes move-up {
+  0% {transform: none}
+  100% {transform: rotateZ(45deg) translate(-4px, -7.5px);}
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  background-color: $color-menu-background;
+  padding: 45px 150px 45px 10px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+  z-index: 9999;
+}
+
+.menu-opened {
+  display: block;
+}
+
+.hamburger-menu-content {
+  font-size: 1.6em;
+  padding: 0 0 25px 0;
+}
+
+.hamburger-menu-space {
+  padding: 0 0 0 10px;
+}
+
+.hamburger-menu-space span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: $color-hamburger-line;
+}
+
+.hamburger-menu-account {
+  font-size: 1.4em;
+  padding: 25px 0 25px 0;
+}
+
+.hamburger-menu-content ul, .hamburger-menu-account ul {
+  list-style-type: none;
+}
+
+.hamburger-menu-content li, .hamburger-menu-account li {
+  padding: 10px;
+}
+
+.hamburger-menu-content a, .hamburger-menu-account a {
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  color: $color-hamburger-line;
+}
+
+.hamburger-menu-content a:hover, .hamburger-menu-account a:hover {
+  color: $color-main-additional;
+}
+
+.hamburger-menu-image {
+  margin: 0 0 40px 10px;
+  padding: 0 0 30px 0;
+}
+
+.hamburger-menu-image img {
+  width: 150px;
+  height: auto;
+}
+
+.background {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.background-show {
+  display: block;
+}
