@@ -6,41 +6,37 @@
 <div class="login-body">
   <div class="login-content">
     <div class="login-title">
-      <span>{{ title }}</span>
+      <span>{{multilingualContent.title.header}}</span>
     </div>
     <div class="login-sign-in">
       <form>
         <div class="login-form-user">
-          <span class="login-form-user-title">{{ loginTitle }}</span>
-          <input type="text" [placeholder]="loginTitle" class="login-input">
+          <span class="login-form-user-title">{{multilingualContent.title.login}}</span>
+          <input type="text" [placeholder]="multilingualContent.title.login" class="login-input">
         </div>
         <div class="login-form-password">
-          <span class="login-form-password-title">{{ passwordTitle }}</span>
-          <input type="text" [placeholder]="passwordTitle" class="password-input">
+          <span class="login-form-password-title">{{multilingualContent.title.password}}</span>
+          <input type="text" [placeholder]="multilingualContent.title.password" class="password-input">
         </div>
         <div class="login-form-password-not-remember">
-          <a href="">{{passwordReset}}</a>
+          <a href="">{{multilingualContent.text.passwordReset}}</a>
         </div>
         <div class="login-form-submit">
           <div class="login-form-submit-remember-me">
-            <input type="checkbox" id="remember-me">
-            <label for="remember-me" class="remember-me-label">
-              <span class="remember-me-checkbox"></span>
-              <span class="remember-me-label-text">{{rememberMe}}</span>
-            </label>
+            <check-box [label]="multilingualContent.text.rememberMe" (checked)="onRememberMe($event)"></check-box>
           </div>
           <div class="login-form-submit-button">
-            <input type="submit" [value]="signIn">
+            <input type="submit" [value]="multilingualContent.text.signIn">
           </div>
         </div>
       </form>
     </div>
     <div class="login-sign-up">
       <div class="login-sign-up-title">
-        <span>{{ signUpTitle }}</span>
+        <span>{{multilingualContent.title.register}}</span>
       </div>
       <div class="login-sign-up-button">
-        <a href="">{{ signUp }}</a>
+        <a href="">{{multilingualContent.text.register}}</a>
       </div>
     </div>
   </div>

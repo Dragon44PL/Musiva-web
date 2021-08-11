@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'musiva-web';
+
+  onCheckBoxChecked(checked : boolean) {
+    console.log(checked)
+  }
 }
