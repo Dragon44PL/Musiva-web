@@ -1,34 +1,33 @@
 {
   "title": {
-    "company" : "company",
-    "community" : "communities",
-    "links" : "useful links"
+    "company" : "firma",
+    "community" : "społeczności",
+    "links" : "przydatne linki"
   },
   "list" : {
     "company": {
-      "about" : "about",
-      "jobs" : "jobs",
+      "about" : "informacje",
+      "jobs" : "praca",
       "record" : "for the record"
     },
     "community": {
-      "artist" : "for artists",
-      "developers" : "developers",
-      "advertising" : "advertising",
-      "investors" : "investors",
-      "vendors" : "vendors"
+      "artist" : "dla artystów",
+      "developers" : "deweloperzy",
+      "advertising" : "reklama",
+      "investors" : "inwestorzy",
+      "vendors" : "dostawcy"
     },
     "links": {
-      "support" : "support",
-      "player" : "web player",
-      "app" : "free mobile app"
+      "support" : "pomoc",
+      "player" : "odtwarzacz internetowy",
+      "app" : "bezpłatna aplikacja mobilna"
     }
   },
   "links" : {
-    "legal" : "legal",
-    "center" : "privacy center",
-    "policy" : "privacy policy",
-    "cookies" : "cookie settings",
-    "ads" : "about ads",
-    "slavery" : "modern slavery act"
+    "legal" : "kwestie prawne",
+    "center" : "centrum ochrony prywatności",
+    "policy" : "polityka prywatności",
+    "cookies" : "ustawienia plików cookie",
+    "ads" : "o reklamach"
   }
 }
