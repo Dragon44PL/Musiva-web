@@ -75,7 +75,7 @@ ul {
   display: none;
   position: fixed;
   background-color: $color-menu-background;
-  padding: 45px 150px 45px 10px;
+  padding: 45px 150px 45px 20px;
   top: 0;
   right: 0;
   height: 100%;
@@ -99,7 +99,7 @@ ul {
 .hamburger-menu-space span {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: $color-hamburger-line;
 }
 
