@@ -1,0 +1,34 @@
+{
+  "title": {
+    "company" : "company",
+    "community" : "communities",
+    "links" : "useful links"
+  },
+  "list" : {
+    "company": {
+      "about" : "about",
+      "jobs" : "jobs",
+      "record" : "for the record"
+    },
+    "community": {
+      "artist" : "for artists",
+      "developers" : "developers",
+      "advertising" : "advertising",
+      "investors" : "investors",
+      "vendors" : "vendors"
+    },
+    "links": {
+      "support" : "support",
+      "player" : "web player",
+      "app" : "free mobile app"
+    }
+  },
+  "links" : {
+    "legal" : "legal",
+    "center" : "privacy center",
+    "policy" : "privacy policy",
+    "cookies" : "cookie settings",
+    "ads" : "about ads",
+    "slavery" : "modern slavery act"
+  }
+}
