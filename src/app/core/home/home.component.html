@@ -1,0 +1,17 @@
+<div class="home-wrapper">
+  <home-header [translation]="header"></home-header>
+  <div class="home-body">
+    <div class="home-body-content">
+      <div>
+        <span class="home-body-content-title">{{home.title.name}}</span>
+        <span class="home-body-content-description">{{home.title.description}}</span>
+      </div>
+      <div>
+        <a class="home-body-content-sing-up" href="">
+          <span>{{home.placeholder.signIn}}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <home-footer [translation]="footer"></home-footer>
+</div>

@@ -1,0 +1,33 @@
+{
+  "title": {
+    "company" : "firma",
+    "community" : "społeczności",
+    "links" : "przydatne linki"
+  },
+  "list" : {
+    "company": {
+      "about" : "informacje",
+      "jobs" : "praca",
+      "record" : "for the record"
+    },
+    "community": {
+      "artist" : "dla artystów",
+      "developers" : "deweloperzy",
+      "advertising" : "reklama",
+      "investors" : "inwestorzy",
+      "vendors" : "dostawcy"
+    },
+    "links": {
+      "support" : "pomoc",
+      "player" : "odtwarzacz internetowy",
+      "app" : "bezpłatna aplikacja mobilna"
+    }
+  },
+  "links" : {
+    "legal" : "kwestie prawne",
+    "center" : "centrum ochrony prywatności",
+    "policy" : "polityka prywatności",
+    "cookies" : "ustawienia plików cookie",
+    "ads" : "o reklamach"
+  }
+}

@@ -1,0 +1,31 @@
+<div class="hamburger" (click)="onMenuClick()">
+  <span class="hamburger-line" #first></span>
+  <span class="hamburger-line between" #second></span>
+  <span class="hamburger-line" #third></span>
+</div>
+<nav class="menu" #menu>
+  <div class="">
+    <div class="hamburger-menu-content">
+      <ul>
+        <li><a href="">{{hamburger.list.premium}}</a></li>
+        <li><a href="">{{hamburger.list.support}}</a></li>
+        <li><a href="">{{hamburger.list.download}}</a></li>
+      </ul>
+    </div>
+    <div class="hamburger-menu-space">
+      <span></span>
+    </div>
+    <div class="hamburger-menu-account">
+      <ul>
+        <li><a href="">{{hamburger.list.register}}</a></li>
+        <li><a href="">{{hamburger.list.signIn}}</a></li>
+      </ul>
+    </div>
+    <div class="hamburger-menu-image">
+      <a href="/">
+        <img src="../../../../../assets/images/musiva-bright.png">
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="background" #background> </div>
